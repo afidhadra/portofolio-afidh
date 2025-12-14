@@ -43,10 +43,17 @@ export default async function About({ params }: { params: Promise<{ locale: stri
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">{t('about.title')}</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">{t('about.subtitle')}</p>
+      {/* Subtle section divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"></div>
+
+      <div className="max-w-6xl mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            {t('about.title')}
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            {t('about.subtitle')}
+          </p>
         </div>
 
         {/* Short Bio */}

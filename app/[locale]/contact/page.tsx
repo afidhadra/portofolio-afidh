@@ -19,13 +19,20 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">{t('contact.title')}</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">{t('contact.subtitle')}</p>
+      {/* Subtle section divider */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"></div>
+
+      <div className="max-w-4xl mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+            {t('contact.title')}
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            {t('contact.subtitle')}
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           <div>
             <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-6">{t('contact.connectTitle')}</h2>
             <p className="text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
