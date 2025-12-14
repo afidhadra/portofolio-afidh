@@ -38,8 +38,8 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
                 <span className="text-2xl mr-4">📧</span>
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">Email</p>
-                  <a href="mailto:afid@example.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-                    afid@example.com
+                  <a href="mailto:afidh12@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+                    afidh12@gmail.com
                   </a>
                 </div>
               </div>
@@ -47,8 +47,8 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
                 <span className="text-2xl mr-4">🐙</span>
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">GitHub</p>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
-                    github.com/afid
+                  <a href="https://github.com/afidh" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                    github.com/afidh
                   </a>
                 </div>
               </div>
@@ -56,9 +56,16 @@ export default async function Contact({ params }: { params: Promise<{ locale: st
                 <span className="text-2xl mr-4">💼</span>
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">LinkedIn</p>
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
-                    linkedin.com/in/afid
+                  <a href="https://linkedin.com/in/afidh-adra" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                    linkedin.com/in/afidh-adra
                   </a>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <span className="text-2xl mr-4">📍</span>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white">Location</p>
+                  <p className="text-gray-600 dark:text-gray-400">Muara Bungo, Jambi</p>
                 </div>
               </div>
             </div>

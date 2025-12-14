@@ -2,14 +2,19 @@
 
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations, useLocale } from "next-intl";
 
 export default function Navbar() {
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations();
   const locale = useLocale();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const switchLocale = () => {
     const currentPath = window.location.pathname;
@@ -35,14 +40,12 @@ export default function Navbar() {
             <Link href={`/${locale}/contact`} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               {t('navigation.contact')}
             </Link>
-            <Link href={`/${locale}/blog`} className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              {t('navigation.blog')}
-            </Link>
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="px-4 py-2 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              aria-label={mounted ? (theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode') : 'Toggle theme'}
             >
-              {theme === 'dark' ? '☀️' : '🌙'}
+              {mounted && (theme === 'dark' ? '☀️' : '🌙')}
             </button>
             <button
               onClick={switchLocale}
@@ -67,29 +70,27 @@ export default function Navbar() {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden animate-slide-up">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800">
-              <Link href={`/${locale}/about`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              <Link href={`/${locale}/about`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">
                 {t('navigation.about')}
               </Link>
-              <Link href={`/${locale}/projects`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              <Link href={`/${locale}/projects`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">
                 {t('navigation.projects')}
               </Link>
-              <Link href={`/${locale}/contact`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+              <Link href={`/${locale}/contact`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md">
                 {t('navigation.contact')}
-              </Link>
-              <Link href={`/${locale}/blog`} className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-                {t('navigation.blog')}
               </Link>
               <button
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md"
+                aria-label={mounted ? (theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode') : 'Toggle theme'}
               >
                 {theme === 'dark' ? '☀️ ' + t('theme.light') : '🌙 ' + t('theme.dark')}
               </button>
               <button
                 onClick={switchLocale}
-                className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md"
               >
                 {locale === 'en' ? 'ID' : 'EN'}
               </button>

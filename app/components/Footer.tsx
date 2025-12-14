@@ -22,7 +22,7 @@ export default async function Footer({ locale }: { locale?: string }) {
             <ul className="space-y-2">
               <li><a href={`/${resolvedLocale}/about`} className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center"><span className="mr-2">👤</span>{t('navigation.about')}</a></li>
               <li><a href={`/${resolvedLocale}/projects`} className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center"><span className="mr-2">💼</span>{t('navigation.projects')}</a></li>
-              <li><a href={`/${resolvedLocale}/blog`} className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center"><span className="mr-2">📝</span>{t('navigation.blog')}</a></li>
+
               <li><a href={`/${resolvedLocale}/contact`} className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center"><span className="mr-2">📧</span>{t('navigation.contact')}</a></li>
             </ul>
           </div>

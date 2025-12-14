@@ -3,13 +3,12 @@
     "home": "Beranda",
     "about": "Tentang",
     "projects": "Proyek",
-    "contact": "Kontak",
-    "blog": "Blog"
+    "contact": "Kontak"
   },
   "hero": {
     "greeting": "Hai, saya",
     "name": "Afidh Adra",
-    "role": "Pengembang Full Stack | UI/UX Designer | Tech Blogger",
+    "role": "Pengembang Full Stack | Spesialis Solusi Web Pemerintah",
     "subtitle": "Selamat datang di portofolio saya",
     "viewWork": "Lihat Karya Saya",
     "getInTouch": "Hubungi Saya"
@@ -37,12 +36,6 @@
           "company": "Kominfo Kota Padang",
           "period": "2025-Sekarang",
           "description": "Mengembangkan dan memelihara aplikasi web untuk layanan pemerintah, termasuk sistem E-Kelurahan untuk Kota Padang menggunakan Vue.js, TypeScript, dan Vite. Bertanggung jawab atas desain frontend, integrasi API, dan pengujian unit untuk memastikan performa optimal. Berkolaborasi dengan tim lintas fungsi untuk implementasi fitur baru dan pemeliharaan kode."
-        },
-        {
-          "position": "Pengembang Website untuk PUPR Kota Padang",
-          "company": "Kominfo Kota Padang",
-          "period": "2025",
-          "description": "Membuat website responsif untuk departemen PUPR menggunakan teknologi web modern. Mengelola pengembangan dari konsep hingga deployment, termasuk optimasi untuk aksesibilitas dan keamanan."
         }
       ]
     },
@@ -51,23 +44,42 @@
       "categories": [
         {
           "name": "Frontend",
-          "items": ["Vue.js", "TypeScript", "HTML", "CSS", "JavaScript"]
+          "items": [
+            {"name": "Vue.js", "level": "Advanced"},
+            {"name": "TypeScript", "level": "Advanced"},
+            {"name": "HTML", "level": "Expert"},
+            {"name": "CSS", "level": "Advanced"},
+            {"name": "JavaScript", "level": "Advanced"}
+          ]
         },
         {
           "name": "Build Tools",
-          "items": ["Vite", "Webpack"]
+          "items": [
+            {"name": "Vite", "level": "Advanced"},
+            {"name": "Webpack", "level": "Intermediate"}
+          ]
         },
         {
           "name": "Styling",
-          "items": ["Tailwind CSS"]
+          "items": [
+            {"name": "Tailwind CSS", "level": "Advanced"}
+          ]
         },
         {
           "name": "Testing",
-          "items": ["Vitest", "Unit Testing"]
+          "items": [
+            {"name": "Vitest", "level": "Intermediate"},
+            {"name": "Unit Testing", "level": "Intermediate"}
+          ]
         },
         {
           "name": "Integrasi & Tools",
-          "items": ["Integrasi API", "Integrasi Backend", "Agile", "Git"]
+          "items": [
+            {"name": "Integrasi API", "level": "Advanced"},
+            {"name": "Integrasi Backend", "level": "Advanced"},
+            {"name": "Agile", "level": "Intermediate"},
+            {"name": "Git", "level": "Advanced"}
+          ]
         }
       ]
     },
@@ -107,10 +119,6 @@
     "message": "Pesan",
     "send": "Kirim Pesan",
     "thankYou": "Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda."
-  },
-  "blog": {
-    "title": "Postingan Terbaru",
-    "readMore": "Baca Selengkapnya"
   },
   "footer": {
     "title": "Portofolio Afidh Adra",

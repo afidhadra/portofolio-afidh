@@ -16,7 +16,7 @@ interface WorkExperienceItem {
 
 interface SkillCategory {
   name: string;
-  items: string[];
+  items: Array<{name: string; level: string}>;
 }
 
 interface CertificationItem {
@@ -97,10 +97,17 @@ export default async function About({ params }: { params: Promise<{ locale: stri
               <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">{category.name}</h3>
                 <ul className="space-y-2">
-                  {category.items.map((skill: string, skillIndex: number) => (
-                    <li key={skillIndex} className="text-gray-600 dark:text-gray-300 flex items-center">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                      {skill}
+                  {category.items.map((skill: {name: string; level: string}, skillIndex: number) => (
+                    <li key={skillIndex} className="flex items-center justify-between">
+                      <span className="text-gray-600 dark:text-gray-300">{skill.name}</span>
+                      <span className={`px-2 py-1 text-xs rounded-full ${
+                        skill.level === 'Expert' ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200' :
+                        skill.level === 'Advanced' ? 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200' :
+                        skill.level === 'Intermediate' ? 'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200' :
+                        'bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200'
+                      }`}>
+                        {skill.level}
+                      </span>
                     </li>
                   ))}
                 </ul>

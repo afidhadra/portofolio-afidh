@@ -29,11 +29,11 @@ test('dark mode toggle', async ({ page }) => {
   await expect(page.locator('html')).toHaveClass(/dark/);
 });
 
-test('blog page loads and shows posts', async ({ page }) => {
-  await page.goto('http://localhost:3000/en/blog');
-  await expect(page).toHaveTitle(/Blog/);
-  // Check if posts are displayed
-  await expect(page.locator('article')).toHaveCount(1); // Assuming 1 post
+test('projects page loads and shows projects', async ({ page }) => {
+  await page.goto('http://localhost:3000/en/projects');
+  await expect(page).toHaveTitle(/Projects/);
+  // Check if projects are displayed
+  await expect(page.locator('.grid').first()).toBeVisible(); // Use first grid for projects
 });
 
 test('contact form submission', async ({ page }) => {
@@ -61,8 +61,26 @@ test('language switch to Indonesian', async ({ page }) => {
 test('accessibility check on homepage', async ({ page }) => {
   await page.goto('http://localhost:3000/en');
   await injectAxe(page);
-  await checkA11y(page, null, {
+  await checkA11y(page, {
     detailedReport: true,
     detailedReportOptions: { html: true },
   });
+});
+
+test('no hydration errors', async ({ page }) => {
+  const hydrationErrors: string[] = [];
+  
+  page.on('console', msg => {
+    if (msg.type() === 'error' && msg.text().includes('hydration')) {
+      hydrationErrors.push(msg.text());
+    }
+  });
+  
+  await page.goto('http://localhost:3000/en');
+  await page.waitForLoadState('networkidle');
+  
+  // Wait a bit more for any delayed hydration errors
+  await page.waitForTimeout(1000);
+  
+  expect(hydrationErrors).toHaveLength(0);
 });

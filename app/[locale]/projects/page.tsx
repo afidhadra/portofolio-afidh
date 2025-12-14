@@ -3,34 +3,18 @@ import { getTranslationsWithFallback } from "@/lib/utils";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution built with Next.js, featuring user authentication, payment integration with Stripe, and admin dashboard.",
-    link: "https://example.com/ecommerce",
+    title: "E-Kelurahan Kota Padang",
+    description: "A comprehensive administrative system for kelurahan (sub-district) management in Kota Padang. Built with Vue.js, TypeScript, and modern web technologies to streamline administrative processes, document management, and citizen services.",
+    link: "https://kelurahan.padang.go.id",
+    technologies: ["Vue.js", "TypeScript", "API Integration", "Database Management"],
+    category: "Government Web Application"
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    link: "https://example.com/taskapp",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "A responsive weather dashboard that displays current weather and forecasts using OpenWeatherMap API, with beautiful data visualizations.",
-    link: "https://example.com/weather",
-  },
-  {
-    title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with Next.js and Tailwind CSS, featuring dark mode and optimized performance.",
-    link: "https://example.com/portfolio",
-  },
-  {
-    title: "Blog Platform",
-    description: "A headless CMS blog platform with Markdown support, SEO optimization, and fast loading times using Next.js and MDX.",
-    link: "https://example.com/blog",
-  },
-  {
-    title: "Social Media Dashboard",
-    description: "A dashboard for managing multiple social media accounts with analytics, scheduling posts, and engagement tracking.",
-    link: "https://example.com/social",
+    title: "Website PUPR Kota Padang",
+    description: "Official website for the Public Works and Spatial Planning Department of Kota Padang. Features responsive design, public information portal, project showcase, and integrated administrative systems for better public service delivery.",
+    link: "https://pupr.padang.go.id",
+    technologies: ["Vue.js", "TypeScript", "Responsive Design", "Content Management"],
+    category: "Government Website"
   },
 ];
 
