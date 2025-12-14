@@ -1,0 +1,126 @@
+{
+  "navigation": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "contact": "Kontak",
+    "blog": "Blog"
+  },
+  "hero": {
+    "greeting": "Hai, saya",
+    "name": "Afidh Adra",
+    "role": "Pengembang Full Stack | UI/UX Designer | Tech Blogger",
+    "subtitle": "Selamat datang di portofolio saya",
+    "viewWork": "Lihat Karya Saya",
+    "getInTouch": "Hubungi Saya"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "subtitle": "Bersemangat dalam menciptakan pengalaman digital",
+    "shortBio": "Staff Ahli Programmer di Kominfo Kota Padang dengan pengalaman lebih dari beberapa tahun dalam pengembangan aplikasi web dan sistem digital. Ahli dalam teknologi frontend seperti Vue.js, TypeScript, dan integrasi API, serta berkomitmen untuk menciptakan solusi inovatif untuk layanan pemerintah daerah. Memiliki pengalaman dalam proyek-proyek seperti website untuk PUPR Kota Padang dan pengembangan aplikasi E-Kelurahan untuk meningkatkan efisiensi administrasi kelurahan.",
+    "storyTitle": "Cerita Saya",
+    "education": {
+      "title": "Pendidikan",
+      "items": [
+        {
+          "degree": "Sarjana Sistem Informasi",
+          "school": "Universitas Putra Indonesia YPTK Kota Padang",
+          "year": "2021-2025"
+        }
+      ]
+    },
+    "workExperience": {
+      "title": "Pengalaman Kerja",
+      "items": [
+        {
+          "position": "Staff Ahli Programmer",
+          "company": "Kominfo Kota Padang",
+          "period": "2025-Sekarang",
+          "description": "Mengembangkan dan memelihara aplikasi web untuk layanan pemerintah, termasuk sistem E-Kelurahan untuk Kota Padang menggunakan Vue.js, TypeScript, dan Vite. Bertanggung jawab atas desain frontend, integrasi API, dan pengujian unit untuk memastikan performa optimal. Berkolaborasi dengan tim lintas fungsi untuk implementasi fitur baru dan pemeliharaan kode."
+        },
+        {
+          "position": "Pengembang Website untuk PUPR Kota Padang",
+          "company": "Kominfo Kota Padang",
+          "period": "2025",
+          "description": "Membuat website responsif untuk departemen PUPR menggunakan teknologi web modern. Mengelola pengembangan dari konsep hingga deployment, termasuk optimasi untuk aksesibilitas dan keamanan."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Keahlian & Teknologi",
+      "categories": [
+        {
+          "name": "Frontend",
+          "items": ["Vue.js", "TypeScript", "HTML", "CSS", "JavaScript"]
+        },
+        {
+          "name": "Build Tools",
+          "items": ["Vite", "Webpack"]
+        },
+        {
+          "name": "Styling",
+          "items": ["Tailwind CSS"]
+        },
+        {
+          "name": "Testing",
+          "items": ["Vitest", "Unit Testing"]
+        },
+        {
+          "name": "Integrasi & Tools",
+          "items": ["Integrasi API", "Integrasi Backend", "Agile", "Git"]
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Sertifikasi",
+      "items": [
+        {
+          "name": "Sertifikat Web Developer Junior",
+          "issuer": "BNSP",
+          "year": "2025"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Hubungi Saya",
+      "whatsapp": "+62 822-8125-2816",
+      "email": "afidh12@gmail.com"
+    },
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools",
+    "description": "Pelajari lebih lanjut tentang Afidh Adra, pengembang dan desainer full stack."
+  },
+  "projects": {
+    "title": "Proyek Saya",
+    "subtitle": "Berikut adalah beberapa proyek yang telah saya kerjakan. Masing-masing mewakili tantangan unik dan pengalaman belajar.",
+    "viewProject": "Lihat Proyek",
+    "viewCode": "Lihat Kode"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "subtitle": "Mari bekerja sama",
+    "connectTitle": "Mari Terhubung",
+    "formTitle": "Kirim Pesan",
+    "name": "Nama",
+    "email": "Email",
+    "message": "Pesan",
+    "send": "Kirim Pesan",
+    "thankYou": "Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda."
+  },
+  "blog": {
+    "title": "Postingan Terbaru",
+    "readMore": "Baca Selengkapnya"
+  },
+  "footer": {
+    "title": "Portofolio Afidh Adra",
+    "description": "Membangun pengalaman web yang luar biasa dengan teknologi modern.",    "location": "Muara Bungo, Jambi",    "quickLinks": "Tautan Cepat",
+    "connect": "Terhubung",
+    "copyright": "© 2025 Afidh Adra. Seluruh hak cipta.",
+    "builtWith": "Dibuat dengan Next.js & Tailwind CSS"
+  },
+  "theme": {
+    "light": "Mode Terang",
+    "dark": "Mode Gelap"
+  }
+}
