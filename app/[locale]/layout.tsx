@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       address: false,
       telephone: false,
     },
-    metadataBase: new URL('https://afidh-adra.vercel.app'),
+    metadataBase: new URL('https://portofolio-afidh.vercel.app'),
     alternates: {
       canonical: '/',
       languages: {
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title,
       description,
-      url: 'https://afidh-adra.vercel.app',
+      url: 'https://portofolio-afidh.vercel.app',
       siteName: "Afidh Adra's Portfolio",
       images: [
         {

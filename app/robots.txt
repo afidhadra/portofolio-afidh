@@ -11,4 +11,4 @@ Allow: /_next/static/
 Allow: /public/
 
 # Sitemap
-Sitemap: https://afidh-adra.vercel.app/sitemap.xml
+Sitemap: https://portofolio-afidh.vercel.app/sitemap.xml
